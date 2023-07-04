@@ -1,0 +1,1 @@
+class s{#a;#t;constructor(a,t){this.#a=a,this.#t=t}dispose(){this.#a=null,this.#t=null}async inflate(a,t){const n=await crs.call("data_manager","get",{manager:this.#a,index:t});n!=null&&await this.#t(a,n)}}export{s as InflationManager};

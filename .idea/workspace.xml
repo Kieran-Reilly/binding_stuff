@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8248a919-6409-489f-b9fa-4ceecefc4d6c" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="jfxaadp7" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2RNGUOSB4AZQjv3pT5J5srpfMYG" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+    <option name="showModules" value="false" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "F:/caperaven projects/crs-applicaion-template-3/packages",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "settings.space",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\caperaven projects\crs-applicaion-template-3\packages" />
+      <recent name="F:\caperaven projects\crs-applicaion-template-3" />
+      <recent name="F:\caperaven projects\crs-applicaion-template-3\styles" />
+      <recent name="F:\caperaven projects\crs-applicaion-template-3\packages\crs-process-api" />
+      <recent name="F:\caperaven projects\crs-applicaion-template-3\packages\crs-process-api\components\view-loader" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\caperaven projects\crs-applicaion-template-3\src" />
+      <recent name="F:\caperaven projects\crs-applicaion-template-3" />
+      <recent name="F:\caperaven projects\crs-applicaion-template-3\styles" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="create-worker-files" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="create-worker-files" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.create-worker-files" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8248a919-6409-489f-b9fa-4ceecefc4d6c" name="Changes" comment="" />
+      <created>1687083139586</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1687083139586</updated>
+      <workItem from="1687083140696" duration="986000" />
+      <workItem from="1687084147892" duration="1616000" />
+      <workItem from="1687157280157" duration="32000" />
+      <workItem from="1687165515999" duration="6184000" />
+      <workItem from="1687175022443" duration="312000" />
+      <workItem from="1687175348870" duration="720000" />
+      <workItem from="1687177382529" duration="8190000" />
+      <workItem from="1687186431500" duration="13153000" />
+      <workItem from="1687242750846" duration="10348000" />
+      <workItem from="1687262912018" duration="36000" />
+      <workItem from="1687346451789" duration="605000" />
+      <workItem from="1687511730675" duration="2542000" />
+      <workItem from="1687769872925" duration="762000" />
+    </task>
+    <task id="LOCAL-00001" summary="initial">
+      <created>1687179819676</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1687179819676</updated>
+    </task>
+    <task id="LOCAL-00002" summary="initial">
+      <created>1687180365717</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1687180365717</updated>
+    </task>
+    <task id="LOCAL-00003" summary="initial">
+      <created>1687182176849</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1687182176849</updated>
+    </task>
+    <task id="LOCAL-00004" summary="initial">
+      <created>1687183738880</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1687183738880</updated>
+    </task>
+    <task id="LOCAL-00005" summary="initial">
+      <created>1687184061549</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1687184061549</updated>
+    </task>
+    <task id="LOCAL-00006" summary="initial">
+      <created>1687195485032</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1687195485032</updated>
+    </task>
+    <task id="LOCAL-00007" summary="initial">
+      <created>1687196998935</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1687196998935</updated>
+    </task>
+    <task id="LOCAL-00008" summary="initial">
+      <created>1687246720750</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1687246720751</updated>
+    </task>
+    <task id="LOCAL-00009" summary="initial">
+      <created>1687247405589</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1687247405589</updated>
+    </task>
+    <task id="LOCAL-00010" summary="initial">
+      <created>1687253805700</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1687253805700</updated>
+    </task>
+    <task id="LOCAL-00011" summary="initial">
+      <created>1687770165447</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1687770165447</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="initial" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

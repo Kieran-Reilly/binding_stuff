@@ -1,0 +1,1 @@
+import{DataTableExtensions as l}from"./../data-table-extensions.js";class s{#t;#e;constructor(t,e){this.#t=e,this.#e=t}dispose(){return this.#t=null,this.#e=null,l.CELL_EDITING.path}toggleEditing(t){}}export{s as default};
