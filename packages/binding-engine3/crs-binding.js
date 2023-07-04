@@ -217,6 +217,10 @@ var Providers = class {
   }
   async update(uuid, ...properties) {
     const element = crs.binding.elements[uuid];
+    if (element.__repeat_container === true) {
+      const provider = crs.binding.providers.elementProviders["template[for]"];
+      provider.update(uuid);
+    }
     if (element.__events != null && element.__events.indexOf("change") != -1) {
       const bindProvider = this.#attrProviders[".bind"];
       const onewayProvider = this.#attrProviders[".one-way"];
@@ -898,6 +902,8 @@ function disposeProperties(obj) {
   const properties = Object.getOwnPropertyNames(obj).filter((name) => ignoreDispose.indexOf(name) == -1);
   for (let property of properties) {
     let pObj = obj[property];
+    if (pObj == null)
+      continue;
     if (typeof pObj == "object") {
       if (Array.isArray(pObj)) {
         disposeArray(pObj);
@@ -1086,9 +1092,13 @@ function disableEvents(element) {
   delete element.unregisterEvent;
 }
 function registerEvent(element, event2, callback, eventOptions = null) {
-  element.addEventListener(event2, callback, eventOptions);
+  const itemInStore = this._domEvents.find((item) => item.element == element && item.event == event2 && item.callback == callback);
+  if (itemInStore != null)
+    return;
+  const target = element.shadowRoot || element;
+  target.addEventListener(event2, callback, eventOptions);
   this._domEvents.push({
-    element,
+    element: target,
     event: event2,
     callback
   });
@@ -1097,7 +1107,8 @@ function unregisterEvent(element, event2, callback) {
   const item = this._domEvents.find((item2) => item2.element == element && item2.event == event2 && item2.callback == callback);
   if (item == null)
     return;
-  element.removeEventListener(item.event, item.callback);
+  const target = element.shadowRoot || element;
+  target.removeEventListener(item.event, item.callback);
   this._domEvents.splice(this._domEvents.indexOf(item), 1);
   delete item.element;
   delete item.callback;
@@ -1251,6 +1262,7 @@ var IdleTaskManager = class {
 var EventStore = class {
   #store = {};
   #eventHandler = this.#onEvent.bind(this);
+  #callEventHandler = this.callEvent.bind(this);
   get store() {
     return this.#store;
   }
@@ -1280,10 +1292,31 @@ var EventStore = class {
     const providerInstance = crs.binding.providers.attrProviders[provider];
     await providerInstance.onEvent?.(event, bid, intent, target);
   }
+  async callEvent(event2) {
+    const target = event2.composedPath()[0];
+    if (target instanceof HTMLInputElement == false)
+      return;
+    const uuid = target["__uuid"];
+    const data = this.#store[event2.type];
+    const element = crs.binding.elements[uuid];
+    let intent = data[uuid];
+    if (intent == null)
+      return;
+    if (!Array.isArray(intent))
+      intent = [intent];
+    for (const i of intent) {
+      await this.#onEventExecute(i, element.__bid, element);
+    }
+  }
   getIntent(event2, uuid) {
     return this.#store[event2]?.[uuid];
   }
   register(event2, uuid, intent, isCollection = true) {
+    const element = crs.binding.elements[uuid];
+    const root = element.getRootNode();
+    if (event2 === "change" && element instanceof HTMLInputElement && root instanceof ShadowRoot && root.host.registerEvent != null) {
+      root.host.registerEvent(root, event2, this.#callEventHandler);
+    }
     if (this.#store[event2] == null) {
       document.addEventListener(event2, this.#eventHandler, {
         capture: true,
@@ -1442,6 +1475,7 @@ globalThis.crs.binding = {
       ".one-way": "$root/providers/properties/one-way.js",
       ".once": "$root/providers/properties/once.js",
       ".setvalue": "$root/providers/attributes/set-value.js",
+      ".attr.toggle": "$root/providers/attributes/attr-toggle.js",
       ".attr": "$root/providers/attributes/attr.js",
       ".if": "$root/providers/attributes/attr-if.js",
       ".case": "$root/providers/attributes/attr-case.js",

@@ -1,2 +1,37 @@
 <link rel="stylesheet" href="/app/welcome/welcome.css">
 <h2>${title}</h2>
+
+<label>
+    <div>&{en.firstName}</div>
+    <input type="text" value.bind="firstName" />
+</label>
+
+<label>
+    <div>&{en.lastName}</div>
+    <input type="text" value.bind="lastName" />
+</label>
+
+<label>
+    <div>&{en.age}</div>
+    <input type="text" value.bind="age" />
+</label>
+
+<button click.call="reset">&{en.reset}</button>
+
+<p>&{en.displayName}: ${firstName} ${lastName} ${age}</p>
+
+
+
+
+
+
+
+
+<!--&lt;!&ndash;<label>&{en.firstName}</label>&ndash;&gt;-->
+<!--&lt;!&ndash;<input type="text" value.bind="firstName" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;<label>&{en.lastName}</label>&ndash;&gt;-->
+<!--&lt;!&ndash;<input type="text" value.bind="lastName" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;<label>&{en.age}</label>&ndash;&gt;-->
+<!--&lt;!&ndash;<input type="number" value.bind="age" />&ndash;&gt;-->
